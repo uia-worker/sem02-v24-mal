@@ -6,6 +6,7 @@
 #else
 #include <unistd.h>
 #endif
+#include <stdio.h>
  
 int getNumberOfCores() {
 #ifdef WIN32
@@ -29,4 +30,11 @@ int getNumberOfCores() {
 #else
     return sysconf(_SC_NPROCESSORS_ONLN);
 #endif
+}
+
+// Hovedprogram
+int main() {
+    printf("Number of cores: %d\n", getNumberOfCores());
+
+    return 0;
 }
