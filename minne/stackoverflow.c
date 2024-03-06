@@ -1,3 +1,4 @@
+/* Generert av GPT UiO med prompt "lag et program som overfyller stack"*/
 #include <stdio.h>
 
 void overflow(int num) {
