@@ -1,5 +1,6 @@
 #!/bin/bash
-BASE="/home/janisg/github.com/uia-worker/fil"
+GITHUBUSER="...fyll inn ditt brukernavn på Github ..."
+BASE="${HOME}/github.com/${GITHUBUSER}/fil/sem02v24"
 cd ${BASE}/c 
 echo -e "\n----- C --------"
 time ./reverse
